@@ -79,7 +79,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
         )}>
           {children}
         </main>
-        <Footer fullWidth={fullWidth} />
+        {/* <Footer fullWidth={fullWidth} /> */}
       </div>
     </div>
   )
