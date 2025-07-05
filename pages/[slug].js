@@ -17,7 +17,7 @@ export default function BlogPost ({ post, blockMap, emailHash }) {
 
   // TODO: It would be better to render something
   if (router.isFallback) return null
-
+  
   const fullWidth = post.fullWidth ?? false
 
   return (
