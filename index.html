@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liran Markin</title>
+  <meta name="description" content="Liran Markin - founder and engineer based in Tel Aviv. Two-time IOI medalist. Cofounder of Edwin and Genie." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22Georgia,serif%22>L</text></svg>" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Liran Markin" />
+  <meta property="og:description" content="Founder and engineer based in Tel Aviv. Two-time IOI medalist." />
+  <meta property="og:url" content="https://liranmarkin.com" />
+  <meta property="og:image" content="https://liranmarkin.com/assets/liran.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@liranmarkin" />
+
+  <script>
+    // Set theme before paint to avoid flash. Default to OS pref, honor stored override.
+    (function () {
+      var stored = localStorage.getItem('theme');
+      var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (dark) document.documentElement.classList.add('dark');
+    })();
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root { --accent: #2563eb; }
+    .dark { --accent: #6ea8ff; }
+    html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .serif { font-family: 'Newsreader', Georgia, serif; }
+    a.link { color: var(--accent); text-decoration: none; transition: opacity .15s; }
+    a.link:hover { opacity: .7; }
+    .label { letter-spacing: .14em; }
+    ::selection { background: var(--accent); color: #fff; }
+  </style>
+</head>
+
+<body class="bg-white text-neutral-800 dark:bg-[#0d0f12] dark:text-neutral-200 antialiased">
+  <main class="mx-auto max-w-2xl px-6 py-16 sm:py-24">
+
+    <!-- Theme toggle -->
+    <button id="theme-toggle" aria-label="Toggle theme"
+      class="fixed top-5 right-5 grid h-9 w-9 place-items-center rounded-full border border-neutral-200 text-neutral-500 transition hover:text-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-100">
+      <svg class="hidden h-4 w-4 dark:block" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.36 6.36-1.42-1.42M7.05 7.05 5.64 5.64m12.72 0-1.42 1.42M7.05 16.95l-1.41 1.41M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/></svg>
+      <svg class="block h-4 w-4 dark:hidden" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+    </button>
+
+    <!-- Header -->
+    <header class="flex items-center gap-5">
+      <img src="assets/liran.jpg" alt="Liran Markin"
+        class="h-20 w-20 shrink-0 rounded-full object-cover ring-1 ring-neutral-200 dark:ring-neutral-700"
+        onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'serif grid h-20 w-20 shrink-0 place-items-center rounded-full bg-neutral-100 text-2xl text-neutral-500 ring-1 ring-neutral-200 dark:bg-neutral-800 dark:text-neutral-400 dark:ring-neutral-700',textContent:'LM'}))" />
+      <div>
+        <h1 class="serif text-3xl font-medium tracking-tight text-neutral-900 dark:text-white">Liran Markin</h1>
+        <p class="mt-1 text-[15px] text-neutral-500 dark:text-neutral-400">Founder &amp; engineer. Two-time IOI medalist.</p>
+        <p class="mt-0.5 text-[13px] text-neutral-400 dark:text-neutral-500">Tel Aviv, Israel</p>
+      </div>
+    </header>
+
+    <!-- Bio -->
+    <section class="mt-10 space-y-4 text-[15.5px] leading-relaxed text-neutral-700 dark:text-neutral-300">
+      <p>
+        I build at the intersection of AI and systems. I&rsquo;m currently cofounder of
+        <a href="https://www.edwin.finance" class="link" target="_blank" rel="noopener">Edwin</a> and Genie, and
+        was the first employee at <a href="https://www.sentra.io" class="link" target="_blank" rel="noopener">Sentra</a>.
+      </p>
+      <p>
+        Competitive programming shaped how I think about problems &mdash; I&rsquo;m a two-time IOI bronze
+        medalist and finished an M.Sc in Computer Science at the University of Haifa at 19. My background
+        spans algorithms, low-level systems, and cybersecurity, and these days most of my work is hands-on
+        AI and LLM engineering.
+      </p>
+    </section>
+
+    <!-- Building / Experience -->
+    <section class="mt-14">
+      <h2 class="label text-[11px] font-semibold uppercase text-neutral-400 dark:text-neutral-500">Building</h2>
+      <ul class="mt-4 space-y-4">
+        <li class="flex flex-col sm:flex-row sm:gap-4">
+          <span class="w-32 shrink-0 text-[13px] text-neutral-400 dark:text-neutral-500">2025 &mdash; now</span>
+          <div class="text-[15px] text-neutral-700 dark:text-neutral-300">
+            <a href="https://www.edwin.finance" class="font-medium text-neutral-900 link dark:text-white" target="_blank" rel="noopener">Edwin</a>
+            &mdash; cofounder. An open-source layer bridging AI agents and DeFi.
+          </div>
+        </li>
+        <li class="flex flex-col sm:flex-row sm:gap-4">
+          <span class="w-32 shrink-0 text-[13px] text-neutral-400 dark:text-neutral-500">ongoing</span>
+          <div class="text-[15px] text-neutral-700 dark:text-neutral-300">
+            <span class="font-medium text-neutral-900 dark:text-white">Genie</span>
+            &mdash; cofounder. AI voice answering for small businesses. Bootstrapped.
+          </div>
+        </li>
+      </ul>
+
+      <h2 class="label mt-12 text-[11px] font-semibold uppercase text-neutral-400 dark:text-neutral-500">Previously</h2>
+      <ul class="mt-4 space-y-4">
+        <li class="flex flex-col sm:flex-row sm:gap-4">
+          <span class="w-32 shrink-0 text-[13px] text-neutral-400 dark:text-neutral-500">2021 &mdash; 2023</span>
+          <div class="text-[15px] text-neutral-700 dark:text-neutral-300">
+            <a href="https://www.sentra.io" class="font-medium text-neutral-900 link dark:text-white" target="_blank" rel="noopener">Sentra</a>
+            &mdash; first employee. Cloud data security (CSPM / DSPM).
+          </div>
+        </li>
+        <li class="flex flex-col sm:flex-row sm:gap-4">
+          <span class="w-32 shrink-0 text-[13px] text-neutral-400 dark:text-neutral-500">M.Sc, age 19</span>
+          <div class="text-[15px] text-neutral-700 dark:text-neutral-300">
+            <span class="font-medium text-neutral-900 dark:text-white">Computer Science</span>, University of Haifa.
+          </div>
+        </li>
+        <li class="flex flex-col sm:flex-row sm:gap-4">
+          <span class="w-32 shrink-0 text-[13px] text-neutral-400 dark:text-neutral-500">Military</span>
+          <div class="text-[15px] text-neutral-700 dark:text-neutral-300">
+            Cybersecurity (Aram), Prime Minister&rsquo;s Office.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Awards -->
+    <section class="mt-14">
+      <h2 class="label text-[11px] font-semibold uppercase text-neutral-400 dark:text-neutral-500">Awards</h2>
+      <ul class="mt-4 space-y-4">
+        <li class="flex flex-col sm:flex-row sm:gap-4">
+          <span class="w-32 shrink-0 text-[13px] text-neutral-400 dark:text-neutral-500">2016</span>
+          <div class="text-[15px] text-neutral-700 dark:text-neutral-300">
+            <span class="font-medium text-neutral-900 dark:text-white">Bronze Medal</span> &mdash;
+            International Olympiad in Informatics (IOI), Russia.
+          </div>
+        </li>
+        <li class="flex flex-col sm:flex-row sm:gap-4">
+          <span class="w-32 shrink-0 text-[13px] text-neutral-400 dark:text-neutral-500">2015</span>
+          <div class="text-[15px] text-neutral-700 dark:text-neutral-300">
+            <span class="font-medium text-neutral-900 dark:text-white">Bronze Medal</span> &mdash;
+            International Olympiad in Informatics (IOI), Kazakhstan.
+          </div>
+        </li>
+      </ul>
+      <p class="mt-4 text-[13.5px] text-neutral-500 dark:text-neutral-400">
+        Full competition record on the
+        <a href="https://islands.co.il/winners/name/%D7%9C%D7%99%D7%A8%D7%9F_%D7%9E%D7%A8%D7%A7%D7%99%D7%9F/" class="link" target="_blank" rel="noopener">Israeli Olympiad in Informatics</a>.
+      </p>
+    </section>
+
+    <!-- Paper -->
+    <section class="mt-14">
+      <h2 class="label text-[11px] font-semibold uppercase text-neutral-400 dark:text-neutral-500">Paper</h2>
+      <div class="mt-4 text-[15px] leading-relaxed text-neutral-700 dark:text-neutral-300">
+        <a href="papers/faster-fptas-knapsack.pdf" class="font-medium text-neutral-900 link dark:text-white" target="_blank" rel="noopener">A Faster FPTAS for #Knapsack</a>
+        <p class="mt-0.5 text-[14px] text-neutral-500 dark:text-neutral-400">
+          Paweł Gawrychowski, Liran Markin, Oren Weimann. ICALP 2018.
+        </p>
+        <p class="mt-2 text-[13.5px]">
+          <a href="papers/faster-fptas-knapsack.pdf" class="link" target="_blank" rel="noopener">PDF</a>
+          <span class="mx-2 text-neutral-300 dark:text-neutral-600">&middot;</span>
+          <a href="https://doi.org/10.4230/LIPIcs.ICALP.2018.64" class="link" target="_blank" rel="noopener">DOI</a>
+          <span class="mx-2 text-neutral-300 dark:text-neutral-600">&middot;</span>
+          <a href="https://arxiv.org/abs/1802.05791" class="link" target="_blank" rel="noopener">arXiv</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Writing -->
+    <section class="mt-14">
+      <h2 class="label text-[11px] font-semibold uppercase text-neutral-400 dark:text-neutral-500">Writing</h2>
+      <p class="mt-4 text-[15px] text-neutral-700 dark:text-neutral-300">
+        I write at
+        <a href="https://blog.liranmarkin.com" class="link" target="_blank" rel="noopener">blog.liranmarkin.com</a>.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <footer class="mt-16 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-neutral-100 pt-8 text-[14px] dark:border-neutral-800">
+      <a href="mailto:liran.markin@gmail.com" class="link">Email</a>
+      <a href="https://www.linkedin.com/in/liran-markin" class="link" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/markin2000" class="link" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://x.com/liranmarkin" class="link" target="_blank" rel="noopener">X</a>
+      <a href="https://blog.liranmarkin.com" class="link" target="_blank" rel="noopener">Blog</a>
+    </footer>
+  </main>
+
+  <script>
+    var toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', function () {
+      var isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
